@@ -1,0 +1,48 @@
+.main{
+    display: flex;
+    background: linear-gradient(45deg, black, transparent);
+    justify-content: center;
+    align-items: center;
+    text-align-last: justify;
+    background-size: 100vw 100vh;
+    min-height: 100vh;
+    border:2px solid black;
+    flex-direction: column;
+}
+#row
+{
+    margin:-15px;
+    padding: 15px;
+}
+.board
+{
+    border:2px solid black;
+    border-radius: 3%;
+    padding:25px;
+}
+.header
+{
+    
+    margin: 1rem auto;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.view-letter
+{
+    margin: 1rem auto 2rem;
+    height: 10vh;
+    width: 12vw;
+    border: 2px solid black;
+    text-align-last: right;
+    padding-right: 1rem; 
+}
+@media screen and (max-width: 1024px) {
+    .view-letter{
+        width: 40vw;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .view-letter{
+        width: 50vw;
+    }
+  }
