@@ -1,16 +1,14 @@
 let string="";
-let buttons=document.querySelectorAll('.button');
+let buttons=document.querySelectorAll('button');
 var memory=0;
 var value=0;
-Array.from(buttons).forEach((button)=>{
+Array.from(buttons).forEach(button=>{
     button.addEventListener('click',(e)=>{
         if(e.target.innerHTML== '=')
         {
             string=eval(string);
             document.querySelector('input').value=string;
-           
             value=string;
-    
         }
         else if(e.target.innerHTML=='C')
         {
@@ -24,13 +22,15 @@ Array.from(buttons).forEach((button)=>{
             string= eval(string) -  memory ;
             document.querySelector('input').value=string;
         }
-        else if(e.target.innerHTML == 'm-'){
+        else if(e.target.innerHTML == 'm-')
+        {
             string= eval(string) -  memory ;
             document.querySelector('input').value=string;
         }
-        else{
+        else
+        {
         string=string+ e.target.innerHTML;
         document.querySelector('input').value=string;
-    }
+        }
     })
 })
